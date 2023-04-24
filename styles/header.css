@@ -15,6 +15,11 @@
     position: relative;
 }
 
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    background-image: url("../img/menuAz.png");
+}
+
+
 .container{
     display: flex;
     align-items: center;
@@ -97,11 +102,21 @@
     .opcoes__item {
         padding: 0 1em;
         text-transform: uppercase;
+        margin-right: 1em;
     }
 
     .opcoes__link {
         text-decoration: none;
         color: #000000;
+    }
+
+    .opcoes__botao:checked~.opcoes__rotulo>.opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 1.5em 0.5em;
     }
 
     .container__imagem-transparente {
@@ -119,6 +134,15 @@
 
     .opcoes__botao {
         display: none;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
     }
 }
 

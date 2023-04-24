@@ -31,7 +31,7 @@
     text-align: center;
     color: var(--branco);
     background: url("../img/lupa.png") no-repeat;
-    background-size: 6%;
+    background-size: 3%;
     background-position: 2em;
 }
 
@@ -42,7 +42,7 @@
     }
 
     .banner__pesquisa {
-        width: 50%;
+        width: 39%;
     }
 
     .banner__pesquisa::placeholder {
