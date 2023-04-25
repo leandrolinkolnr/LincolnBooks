@@ -39,6 +39,7 @@
 
 @media screen and (min-width: 1024px) {
     .contato {
+        margin-top: 7%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,6 +55,7 @@
     }
 
     .contato__email {
+        margin-left: 5%;
         width: 30%;
     }
 }
