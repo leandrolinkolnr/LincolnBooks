@@ -15,7 +15,9 @@
 
     <header class="cabeçalho">
         <div class="container">
-            <img src="../img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem"> 
+            <a href="../index.html">
+                <img src="../img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            </a>
             <h1 class="container__titulo"><b class="container__titulo--negrito">Lincoln</b>Books</h1>
         </div>
 
@@ -33,16 +35,25 @@
                 <img src="../img/Compras.svg" alt="Carrinho compras" class="container__imagem">
                 <p class="container__texto">Minha sacola</p>
             </a>
-            <input type="checkbox" id="opcoes-menu-user" class="opcoes__botao">
-            <label for="opcoes-menu-user" class="opcoes__rotulo">
+
+            <input type="checkbox" id="menu-user" class="opcoes__menu">
+            
+            <label for="menu-user" class="opcoes__rotulo">
                 <img src="../img/Usuário.svg" alt="Meu perfil" class="container__imagem">
             </label>
 
-            <ul class="lista-menu">
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Meu Perfil</a>
-            </ul>
+
+            <ul class="lista-perfil">
+                <li class="lista-perfil__titulo">Perfil</li>
+                <li class="lista-perfil__item">
+                    <a href="./perfil.html" class="lista-perfil__link">Meu Perfil</a>  
+                </li>
+                <li class="lista-perfil__item">
+                   <a href="./cadastro.html" class="lista-perfil__link">Cadastrar</a>    
+                </li>
+          </ul>     
         </div>
+
     </header>
 
 
