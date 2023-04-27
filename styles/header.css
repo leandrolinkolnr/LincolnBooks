@@ -215,13 +215,16 @@
         -webkit-text-fill-color: var(--branco);
         text-decoration: none;
     }
+
+    .lista-perfil {	
+        display: none;
+        position: absolute;
+        right: 0%;
+        top: 100%;
+        width: 9vw;}
+
+
     
-}
-
-
-
-
-@media screen and (min-width: 1728px) {
 
     .container__link {
         display: flex;
@@ -229,6 +232,13 @@
         text-decoration: none;
         margin-right: 0%;
     }
+    
+}
+
+
+
+
+@media screen and (min-width: 1728px) {
 
     .cabeçalho {
         padding: 0 2em;
@@ -245,17 +255,11 @@
         font-weight: 700;
     }
 
-    .lista-perfil {	
-        display: none;
-        position: absolute;
-        right: 0%;
-        top: 100%;
-        width: 9vw;}
-
-
     .lista-perfil__titulo {
         margin-left: -10%;
         color: var(--azul);
         display: block;
     }
+
+    
 }
