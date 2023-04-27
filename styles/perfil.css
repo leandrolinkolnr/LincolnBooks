@@ -2,13 +2,11 @@
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-    /* justify-content: space-between; */
     margin-bottom: 0.5em;
 }
 
 .perfil {
     display: flex;
-    /* justify-content: center; */
     background: var(--branco);
     box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -49,8 +47,6 @@
         width: 50%;
         margin: 2em auto;
     }
-
-    
 }
 
 
@@ -68,10 +64,5 @@
     .perfil__descrição {
         margin-right: 2em;
     }
-
-    .perfil {
-        width: 60%;
-        margin-left: 3em;
-    }   
 
 }
