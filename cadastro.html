@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Formulário de cadastro</title>
 </head>
 
@@ -15,36 +15,36 @@
 
     <header class="cabeçalho">
         <div class="container">
-            <a href="../index.html">
-                <img src="../img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <a href="./index.html">
+                <img src="./img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
             </a>
             <h1 class="container__titulo"><b class="container__titulo--negrito">Lincoln</b>Books</h1>
         </div>
 
         <ul class="opcoes">
-            <li class="opcoes__item"><a href="../index.html" class="opcoes__link">Pagina Inicial</a></li>
+            <li class="opcoes__item"><a href="./index.html" class="opcoes__link">Pagina Inicial</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
         </ul>
 
         <div class="container">
-            <a href="#"><img src="../img/Favoritos.svg" alt="Meus favoritos"
+            <a href="#"><img src="./img/Favoritos.svg" alt="Meus favoritos"
                 class="container__imagem container__imagem-transparente">
             </a>
             <a href="#" class="container__link">
-                <img src="../img/Compras.svg" alt="Carrinho compras" class="container__imagem">
-                <p class="container__texto">Minha sacola</p>
+                <img src="./img/Compras.svg" alt="Carrinho compras" class="container__imagem">
+                <p class="container__texto">Carrinho</p>
             </a>
 
             <input type="checkbox" id="menu-user" class="opcoes__menu">
             
             <label for="menu-user" class="opcoes__rotulo">
-                <img src="../img/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <img src="./img/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <li class="lista-perfil__titulo">Perfil</li>
             </label>
 
 
             <ul class="lista-perfil">
-                <li class="lista-perfil__titulo">Perfil</li>
                 <li class="lista-perfil__item">
                     <a href="./perfil.html" class="lista-perfil__link">Meu Perfil</a>  
                 </li>
@@ -53,10 +53,7 @@
                 </li>
           </ul>     
         </div>
-
     </header>
-
-
 
     <section class="banner">
         <h2 class="banner__titulo">Tela de cadastro</h2>
@@ -93,6 +90,7 @@
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="cep">CEP</label>
                 <input name="cep" id="cep" class="campo__escrita" required />
+                <div id="erro"></div>
             </div>
 
             <div class="formulario__campo">
@@ -152,19 +150,19 @@
                         <option value="EX">Estrangeiro</option>
                     </select>
                 </div>
-
             </div>
+
 
             <input type="submit" value="Enviar formulário" class="formulario__botao" id="enviar">
         </form>
     </main>
-
 
     <footer class="rodape">
         <hr>
         <h2 class="rodape__titulo">© Leandro Lincoln - 2023</h2>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
